@@ -142,7 +142,11 @@
                 "type": "string",
                 "description": "Спеціалізація тренера"
               },
-            
+                "experience": {
+                "type": "integer",
+                "description": "Досвід тренера у роках",
+                "minimum": 0
+              }
             },
             "required": ["name", "specialization", "experience"]
           }
