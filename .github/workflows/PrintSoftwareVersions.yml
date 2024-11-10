@@ -1,0 +1,24 @@
+name: Print Software Versions
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # Виведення версій ПО рівня обробки даних
+  data_processing_versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Перевірка версії Node.js
+        run: node --version
+      - name: Перевірка версії Angular
+        run: ng version
+      - name: Перевірка версії Apache Tomcat
+        run: ./apache-tomcat-9.0.58/bin/version.sh
+
+  # Виведення версій СКБД на рівні доступу даних
+  database_versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Перевірка версії PostgreSQL
+        run: psql --version
