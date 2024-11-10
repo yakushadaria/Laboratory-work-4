@@ -20,12 +20,6 @@
                 "maxLength": 25,
                 "pattern": "^[A-Za-z0-9_]+$"
               },
-              "email": {
-                "type": "string",
-                "description": "Електронна пошта користувача",
-                "format": "email",
-                "pattern": "^[[:alnum:]]+@[[:alpha:]][[:alnum:]]+\\.[[:alpha:]]{2,4}$"
-              },
               "weight": {
                 "type": "integer",
                 "description": "Вага користувача в кг",
